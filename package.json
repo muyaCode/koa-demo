@@ -8,7 +8,7 @@
   "bin": {},
   "scripts": {
     "start": "node bin/www",
-    "dev": "./node_modules/.bin/nodemon bin/www",
+    "dev": "nodemon bin/www",
     "prd": "pm2 start bin/www",
     "prod": "npm build && rm -rf .cache && NODE_ENV=production nodemon ./app.js",
     "build": "rm -rf dist && parcel build src/index.html --no-cache -d dist/ --public-url /"
