@@ -9,7 +9,7 @@ const fs = require('fs');
 const koaStatic = require('koa-static');
 // routes路由
 const index = require('./routes/index');
-const users = require('./routes/users');
+const users = require('./routes/user/users');
 
 // 错误处理
 onerror(app);
